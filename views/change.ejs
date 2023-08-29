@@ -1,0 +1,13 @@
+
+<%- include('partials/header') %>
+<!-- Render the error message if there is one -->
+<% if (error) { %>
+    <p><%= error %></p>
+<% } %>
+
+<form action="/change-password" method="post">
+    <input type="password" name="oldPassword" placeholder="Old Password" required>
+    <input type="password" name="newPassword" placeholder="New Password" required>
+    <button type="submit">Change Password</button>
+</form>
+<%- include('partials/footer') %>
