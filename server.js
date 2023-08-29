@@ -25,7 +25,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect('mongodb+srv://codingdatta:0Im3UvqqKkFQY2Jn@cluster143.pxbc2d7.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://name.pxbc2d7.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
